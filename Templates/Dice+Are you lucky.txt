@@ -1,0 +1,42 @@
+package Main;
+
+import java.util.Scanner;
+import java.util.Random;
+
+
+public class main {
+	
+	public static void main(String args[]){		
+		Scanner typing = new Scanner(System.in);
+		Random dice = new Random();
+		
+		int number, number2;
+		double number3 = 0;
+		double number4;
+		
+		for(int count = 0;count <= 10;count++){
+		
+		number = dice.nextInt(6);
+		number3 = number3 + number;
+		
+		number2 = number + 1;
+		System.out.println(number2);
+		
+	
+			}
+		number4 = number3 / 10;
+		
+		System.out.println("Your average was:" + number4);
+		
+		if(number4 <= 3){
+			System.out.println("You aren't lucky");
+			
+		}else{
+			System.out.println("You are lucky");
+			
+		}
+		
+		
+		}
+}
+	
