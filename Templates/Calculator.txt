@@ -1,0 +1,62 @@
+package Main;
+
+import java.util.Scanner;
+
+
+public class main {
+	
+	public static void main(String args[]){		
+		Scanner type = new Scanner(System.in);
+		System.out.println("Kas par darbibu:");
+		System.out.println("(1=[+] 2=[-] 3=[*] 4=[/])");
+		int mdig;
+		double fdig, sdig, ldig; 		
+		mdig = type.nextInt();						
+		if (mdig == 1){
+			System.out.println("Enter first number:");
+			fdig = type.nextDouble();
+			System.out.println("Enter second number:");
+			sdig = type.nextDouble();
+			ldig = fdig + sdig;
+			System.out.print("Answer is:");
+			System.out.println(ldig);
+						
+		}else{			
+			if(mdig == 2){
+				System.out.println("Enter first number:");
+				fdig = type.nextDouble();
+				System.out.println("Enter second number:");
+				sdig = type.nextDouble();
+				ldig = fdig - sdig;
+				System.out.print("Answer is:");
+				System.out.println(ldig);				
+			}else{				
+				if(mdig == 3){
+					System.out.println("Enter first number:");
+					fdig = type.nextDouble();
+					System.out.println("Enter second number:");
+					sdig = type.nextDouble();
+					ldig = fdig * sdig;
+					System.out.print("Answer is:");
+					System.out.println(ldig);				
+			}else{								
+											
+							if(mdig == 4){						
+							System.out.println("Enter first number:");
+							fdig = type.nextDouble();
+							System.out.println("Enter second number:");
+							sdig = type.nextDouble();
+							ldig = fdig / sdig;
+							System.out.print("Answer is:");
+							System.out.println(ldig);														
+							}else{
+								
+								System.out.println("Invalid");
+					}
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,32 @@
+package Main;
+
+import java.util.Scanner;
+
+
+public class main {
+	
+	public static void main(String args[]){		
+		Scanner typing = new Scanner(System.in);
+		
+		double total = 0;
+		double grade;
+		double average;
+		double counter = 0;
+		
+		
+		while(counter <= 10){
+			System.out.println("Enter number:");
+			grade = typing.nextDouble();
+			total = total + grade;
+			counter ++;
+			
+		}
+		
+		average = total / 10;
+		
+		System.out.printf("Average is:%s", average);
+
+		
+		}
+}
+	
